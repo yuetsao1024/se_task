@@ -9,15 +9,14 @@ windows 64位
 
 # 源文件说明
 
-由于此程序比较简单，所以只写了一个类（Main.java）。    
+由于此程序比较简单，所以写了一个类（p包下面的Main.java）。
 
 src的结构：        
-src
-|    
+src     
+|        
 |---- p    
-      |
-      |----Main.java
-      
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----Main.java   
 
 # 功能描述
 
