@@ -35,7 +35,6 @@ public class Main implements ActionListener{
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
-	private Font f;
 	private DecimalFormat df;
 	
 	/**
@@ -66,132 +65,133 @@ public class Main implements ActionListener{
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 1600, 900);
+		frame.setBounds(50, 50, 800, 450);
 		frame.getContentPane().setBackground(new Color(235, 235, 235));
 		frame.setUndecorated(true);
 		frame.getContentPane().setLayout(null);
-		f=new Font("幼圆", 0, 20);
+		//f=new Font("幼圆", 0, 10);
 		df=new DecimalFormat("0.00");
-
-
-
-		JPanel panel1=new JPanel();   //估计价格、容量
-		panel1.setBounds(100, 0, 1500, 900);
+		
+		
+		
+		 
+		JPanel panel1=new JPanel();
+		panel1.setBounds(50, 0, 750, 450);
+		frame.getContentPane().add(panel1);
 		panel1.setLayout(null);
 		
 		JLabel year = new JLabel("年份：");
-		year.setFont(new Font("幼圆", Font.PLAIN, 30));
-		year.setBounds(293, 256, 90, 64);
+		//year.setFont(new Font("幼圆", Font.PLAIN, 30));
+		year.setBounds(146, 128, 45, 32);
 		panel1.add(year);
 		
 		textField = new JTextField();
-		textField.setBounds(397, 277, 135, 32);
+		textField.setBounds(198, 138, 66, 16);
 		textField.setColumns(10);
-		textField.setFont(f);
+		//textField.setFont(f);
 		panel1.add(textField);
 		
 		JLabel len = new JLabel("字长：");
-		len.setFont(new Font("幼圆", Font.PLAIN, 30));
-		len.setBounds(604, 256, 90, 64);
+		//len.setFont(new Font("幼圆", Font.PLAIN, 30));
+		len.setBounds(299, 128, 45, 32);
 		panel1.add(len);
 		
 		
 		textField_1 = new JTextField();
-		textField_1.setBounds(708, 277, 135, 32);
-		textField_1.setFont(f);
+		textField_1.setBounds(359, 136, 67, 16);
+		//textField_1.setFont(f);
 		panel1.add(textField_1);
 		textField_1.setColumns(10);
 		
 		btnNewButton = new JButton("确定");
-		btnNewButton.setBounds(992, 270, 228, 46);
+		btnNewButton.setBounds(473, 134, 72, 21);
 		btnNewButton.setBackground(new Color(12303291));
+		btnNewButton.addActionListener(this);
 		panel1.add(btnNewButton);
 		
 		
 		result1 = new JTextArea();
-		result1.setBounds(429, 469, 730, 161);
-		result1.setFont(f);
+		result1.setBounds(146, 204, 399, 112);
+		//result1.setFont(f);
 		panel1.add(result1);
-		
-		btnNewButton.addActionListener(this);
-		
-		panel1.setVisible(true);
-		frame.getContentPane().add(panel1);
-	
-		
-		JPanel panel2=new JPanel();      //估计成本
-		panel2.setBounds(100, 0, 1500, 900);
+
+			
+		JPanel panel2=new JPanel();
+		panel2.setBounds(50, 0, 750, 450);
+		frame.getContentPane().add(panel2);
 		panel2.setLayout(null);
 		
 		
 		JLabel year2 = new JLabel("年份：");
-		year2.setFont(new Font("幼圆", Font.PLAIN, 30));
-		year2.setBounds(352, 276, 90, 57);
+		//year2.setFont(new Font("幼圆", Font.PLAIN, 30));
+		year2.setBounds(176, 135, 45, 28);
 		panel2.add(year2);
 		
 		
 		textField_2 = new JTextField();
-		textField_2.setBounds(456, 288, 140, 33);
-		textField_2.setFont(f);
+		textField_2.setBounds(228, 141, 70, 16);
+		//textField_2.setFont(f);
 		panel2.add(textField_2);
 		textField_2.setColumns(10);
 		
 		
 		
 		JLabel num = new JLabel("令条数：");
-		num.setFont(new Font("幼圆", Font.PLAIN, 30));
-		num.setBounds(321, 379, 140, 57);
+		//num.setFont(new Font("幼圆", Font.PLAIN, 30));
+		num.setBounds(160, 189, 70, 28);
 		panel2.add(num);
 		
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(456, 396, 140, 33);
+		textField_3.setBounds(228, 198, 70, 16);
 		panel2.add(textField_3);
-		textField_3.setFont(f);
+		//textField_3.setFont(f);
 		
 		
 		JLabel salary = new JLabel("工资：");
-		salary.setFont(new Font("幼圆", Font.PLAIN, 30));
-		salary.setBounds(352, 490, 90, 57);
+		//salary.setFont(new Font("幼圆", Font.PLAIN, 30));
+		salary.setBounds(176, 245, 45, 28);
 		panel2.add(salary);
 		
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(456, 507, 140, 33);
+		textField_4.setBounds(228, 253, 70, 16);
 		panel2.add(textField_4);
-		textField_4.setFont(f);
+		//textField_4.setFont(f);
 		
 		
 		textArea2 = new JTextArea();
-		textArea2.setBounds(755, 288, 363, 343);
-		textArea2.setFont(f);
+		textArea2.setBounds(372, 144, 181, 171);
+		//textArea2.setFont(f);
 		panel2.add(textArea2);
 		
 		btn2 = new JButton("确认");
-		btn2.setBounds(456, 598, 140, 33);
+		btn2.setBounds(228, 299, 70, 16);
 		panel2.add(btn2);
 		btn2.setBackground(new Color(12303291));
 		btn2.addActionListener(this);
-		
-		panel2.setVisible(false);
-		frame.getContentPane().add(panel2);
-		
+	
+		panel2.setVisible(false);		
 		
 		
+		panel1.setVisible(true);		
 		
-		JLabel pav=new JLabel(new ImageIcon("E:/MyFile/design/task1/data/004.png"));
-		pav.setBounds(0,0, 100, 300);
-		frame.getLayeredPane().add(pav);
+		
+		
+		
+		JLabel pav=new JLabel("<html>估<br/>计<br/>价<br/>格<br/>和<br/>容<br/>量",JLabel.CENTER);
+		pav.setBounds(0,0, 50, 150);
+		frame.getContentPane().add(pav);
 
-		JLabel m=new JLabel(new ImageIcon("E:/MyFile/design/task1/data/001.png"));
-		m.setBounds(0, 300, 100, 300);
-		frame.getLayeredPane().add(m);
+		JLabel m=new JLabel("<html>估<br/>计<br/>成<br/>本",JLabel.CENTER);
+		m.setBounds(0, 150, 50, 150);
+		frame.getContentPane().add(m);
 		
-		JLabel quit=new JLabel(new ImageIcon("E:/MyFile/design/task1/data/000.png"));
-		quit.setBounds(0, 600, 100, 300);
-		frame.getLayeredPane().add(quit);
+		JLabel quit=new JLabel("<html>退<br/>出",JLabel.CENTER);
+		quit.setBounds(0, 300, 50, 150);
+		frame.getContentPane().add(quit);
 		
 		quit.addMouseListener(new MouseAdapter() {
 
@@ -255,20 +255,21 @@ public class Main implements ActionListener{
 	
 		if(e.getSource()==btnNewButton) {
 			String massage=null;
-			double price,volum,y=Double.parseDouble(textField.getText());
-			volum=4080.0*Math.pow(2.71828, 0.28*(y-1960.0));
-			if(textField_1.getText().equals("16")) {
+			double price,volum,y=Double.parseDouble(textField.getText()),len=Double.parseDouble(textField_1.getText());
+			volum=4080.0*Math.pow(Math.E, 0.28*(y-1960.0));
+			if(len==16) {
 				price=0.048*Math.pow(0.72, y-1974.0);
 				price*=volum;
 			}
 			else 
 			{
-				price=0.3*Math.pow(0.72, y-1974.0);
+				price=0.003*Math.pow(0.72, y-1974.0);
 				price*=volum;
-				price/=8.0;
+				price*=len;
 			}
 			massage=(int)y+"年对计算机容量的需求估计为："+df.format(volum)+"字\n"+"如果字长为"+textField_1.getText()+"位的话，这个存储器的价格是："+df.format(price);
 			result1.setText(massage);
+			System.out.println(massage);
 		}
 		else if(e.getSource()==btn2) {
 			double year,num,money,volum,salary;
