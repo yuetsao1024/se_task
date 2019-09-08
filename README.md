@@ -1,6 +1,6 @@
 # se_task
 ## 17软件工程课各班网上仓库链接
-[计一](https://github.com/JiSanSET/ "计一")&nbsp;&nbsp;&nbsp;[计二](https://gitee.com/zhang_baowang/17_to_2 "计二")&nbsp;&nbsp;&nbsp; [计三](https://github.com/JiSanSET/ "计三")&nbsp;&nbsp;&nbsp;[物一](https://github.com/JiSanSET/ "物一") &nbsp;&nbsp;&nbsp;[物二](https://github.com/JiSanSET/ "物二")
+[计一](https://github.com/WYDgits/17-class-1 "计一")&nbsp;&nbsp;&nbsp;[计二](https://gitee.com/zhang_baowang/17_to_2 "计二")&nbsp;&nbsp;&nbsp; [计三](https://github.com/JiSanSET/ "计三")&nbsp;&nbsp;&nbsp;[物一](https://github.com/wangyao616/17050401 "物一") &nbsp;&nbsp;&nbsp;[物二](https://github.com/Jason-Chan-rain/Tasks "物二")
 
 ## 作业提交说明
 软件工程作业要求：
