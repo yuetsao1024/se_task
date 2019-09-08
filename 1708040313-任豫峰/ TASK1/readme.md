@@ -1,4 +1,4 @@
- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> 
+
  # Task 1
 
 ### 1.  Devlopment Kit
@@ -47,8 +47,7 @@ Button  Entry Label Scale RadioButton 是我用到的所有tkinter的组件
 
 countM
 
-\[M = 4080e^{0.28(Y-1960)}\]
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=M&space;=&space;4080e^{0.28(Y-1960)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?M&space;=&space;4080e^{0.28(Y-1960)}" title="M = 4080e^{0.28(Y-1960)}" /></a>
 countP1
 
 countP2
