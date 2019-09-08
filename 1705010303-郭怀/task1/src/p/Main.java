@@ -37,15 +37,14 @@ public class Main implements ActionListener{
 	private JTextField textField_4;
 	private DecimalFormat df;
 	
-	/**
-	 * Launch the application.
-	 */
+	
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Main window = new Main();
-					window.frame.setVisible(true);
+					Main window = new Main();//创建程序界面
+					window.frame.setVisible(true);//显示
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -53,33 +52,27 @@ public class Main implements ActionListener{
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public Main() {
 		initialize();
 	}
-
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
+	
 	private void initialize() {
-		frame = new JFrame();
+		frame = new JFrame();  
 		frame.setBounds(50, 50, 800, 450);
 		frame.getContentPane().setBackground(new Color(235, 235, 235));
 		frame.setUndecorated(true);
 		frame.getContentPane().setLayout(null);
-		//f=new Font("幼圆", 0, 10);
 		df=new DecimalFormat("0.00");
 		
 		
 		
 		 
-		JPanel panel1=new JPanel();
+		JPanel panel1=new JPanel();  //panel1,"估计容量和价格"的界面
 		panel1.setBounds(50, 0, 750, 450);
 		frame.getContentPane().add(panel1);
 		panel1.setLayout(null);
-		
+		                                 //添加界面中的控件
 		JLabel year = new JLabel("年份：");
 		//year.setFont(new Font("幼圆", Font.PLAIN, 30));
 		year.setBounds(146, 128, 45, 32);
@@ -115,13 +108,13 @@ public class Main implements ActionListener{
 		//result1.setFont(f);
 		panel1.add(result1);
 
-			
+			                   //panel2,"估计成本"的界面
 		JPanel panel2=new JPanel();
 		panel2.setBounds(50, 0, 750, 450);
 		frame.getContentPane().add(panel2);
 		panel2.setLayout(null);
 		
-		
+		                            //添加界面中的控件
 		JLabel year2 = new JLabel("年份：");
 		//year2.setFont(new Font("幼圆", Font.PLAIN, 30));
 		year2.setBounds(176, 135, 45, 28);
@@ -181,6 +174,9 @@ public class Main implements ActionListener{
 		
 		
 		
+		//添加三个选项卡
+		
+		
 		JLabel pav=new JLabel("<html>估<br/>计<br/>价<br/>格<br/>和<br/>容<br/>量",JLabel.CENTER);
 		pav.setBounds(0,0, 50, 150);
 		frame.getContentPane().add(pav);
@@ -192,6 +188,10 @@ public class Main implements ActionListener{
 		JLabel quit=new JLabel("<html>退<br/>出",JLabel.CENTER);
 		quit.setBounds(0, 300, 50, 150);
 		frame.getContentPane().add(quit);
+		
+		
+	
+		//为三个选项卡设置监听事件
 		
 		quit.addMouseListener(new MouseAdapter() {
 
@@ -229,8 +229,8 @@ public class Main implements ActionListener{
 		});
 	
 		
-		
-		frame.addMouseListener(new MouseAdapter() {
+		//鼠标拖动方法
+		frame.addMouseListener(new MouseAdapter() {  
 			public void mousePressed(MouseEvent e) { 
 				pp = e.getPoint();
 			}
@@ -249,6 +249,9 @@ public class Main implements ActionListener{
 		
 	}
 
+	
+	//两个“确认”按钮的监听方法
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
