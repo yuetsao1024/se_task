@@ -11,3 +11,5 @@ the software engine housework
 ## 源文件说明
 主要文件为src\main\java\com\bing\excecise1 里面的MainActivity.java以及src\main\res\layout 里面的activity_mian.xml
  
+## 效果展示
+![Image text](https://github.com/bingbing233/Excecise1/blob/master/demo.gif)
