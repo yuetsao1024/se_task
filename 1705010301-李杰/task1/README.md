@@ -14,9 +14,11 @@
 
     MyApplication.zip包含了所有的项目文件  
     app-release.apk为生成的apk,安装即可使用  
+    MainActivity.java生成app的Activity  
+    activity_main.xml为生成app的UI  
 
 #效果演示  
 
-<a href="url"><img src="https://github.com/JiSanSET/se_task/blob/master/1705010301-%E6%9D%8E%E6%9D%B0/task1/1p563-p90oa.gif" align="left" height="480" width="270" ></a>  
+<a href="url"><img src="https://github.com/JiSanSET/se_task/blob/master/1705010301-%E6%9D%8E%E6%9D%B0/task1/1p563-p90oa.gif" align="left" height="480" width="270" ></a><br/>  
 
 ### End  
