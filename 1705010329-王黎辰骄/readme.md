@@ -13,7 +13,7 @@ Microsoft Windows7以上
 * 输入年份、指令、月均工资点击成本价格按钮即可查看成本价格
 
 # 核心代码
-## main.java
+## function.java
 
 ```
 import java.math.*;
