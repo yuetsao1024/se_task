@@ -1,0 +1,35 @@
+ .serarch {
+	background: none repeat scroll 0 0 #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    display: inline;
+    float: left;
+    height: 28px;
+    margin: 8px 0 0 10px;
+    padding:0;
+    width: 160px;
+}
+.serarch:hover {
+	background:#fff;
+}
+.serarch input.keyword {
+	width:130px;
+	height:20px;
+	margin:3px 0 0 5px;
+	display:block;
+	float:left;
+	border:0px;
+}
+.serarch input.submit {
+	background:url(style_icon.png) 0px -593px;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    height: 28px;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    text-align:left;
+    width: 25px;
+    float:right;
+}

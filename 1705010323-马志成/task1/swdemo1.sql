@@ -1,0 +1,55 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- 主机： 127.0.0.1:3306
+-- 生成日期： 2019-09-05 13:49:35
+-- 服务器版本： 5.7.26
+-- PHP 版本： 5.6.40
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- 数据库： `swdemo1`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `volume`
+--
+
+DROP TABLE IF EXISTS `volume`;
+CREATE TABLE IF NOT EXISTS `volume` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `year` varchar(11) NOT NULL,
+  `volume` bigint(11) NOT NULL,
+  `time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- 转存表中的数据 `volume`
+--
+
+INSERT INTO `volume` (`id`, `year`, `volume`, `time`) VALUES
+(1, '1980', 1103340, '2019-09-04 17:52:48'),
+(2, '2000', 298372203, '2019-09-04 17:55:35'),
+(3, '1999', 225504860, '2019-09-04 17:57:35'),
+(4, '1888', 0, '2019-09-04 17:59:28'),
+(5, '1778', 0, '2019-09-04 18:12:15'),
+(6, '2010', 4906625479, '2019-09-05 21:43:33');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
