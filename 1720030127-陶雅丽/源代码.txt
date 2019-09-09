@@ -1,0 +1,294 @@
+package homework1;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+
+public class D extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField Y1;
+	private JTextField AL1;
+	private JTextField Y2;
+	private JTextField N2;
+	private JTextField D2;
+	private JTextField SA2;
+	private JTextField AL2;
+	private JTextField Y3;
+	private JTextField N3;
+	private JTextField D3;
+	private JTextField SA3;
+	private JTextField AL3;
+	int year;
+	int mon,work;
+	int bits;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					D d = new D();
+					d.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public D() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 826, 434);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(0, 5, 0, 0));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(new GridLayout(5, 0, 0, 0));
+		contentPane.add(panel, BorderLayout.CENTER);
+		
+		JPanel panel_1 = new JPanel();		
+		JPanel panel_2 = new JPanel();
+		JPanel panel_3 = new JPanel();
+		JPanel panel_4 = new JPanel();
+		JPanel panel_5 = new JPanel();
+
+		JPanel panel_6 = new JPanel();
+		JPanel panel_7 = new JPanel();
+		JPanel panel_8 = new JPanel();
+		JPanel panel_9 = new JPanel();
+		JPanel panel_10 = new JPanel();
+		JPanel panel_11 = new JPanel();
+		JPanel panel_12 = new JPanel();
+		JPanel panel_13 = new JPanel();
+		JPanel panel_14 = new JPanel();
+		JPanel panel_15 = new JPanel();
+		JPanel panel_18 = new JPanel();
+		JPanel panel_19 = new JPanel();
+		JPanel panel_20 = new JPanel();
+		JPanel panel_21 = new JPanel();
+		JPanel panel_22 = new JPanel();
+		JPanel panel_23 = new JPanel();
+		JPanel panel_24 = new JPanel();
+		JPanel panel_25 = new JPanel();
+		JPanel panel_26 = new JPanel();
+		JPanel panel_27 = new JPanel();
+		JPanel panel_28 = new JPanel();
+		JPanel panel_29 = new JPanel();
+		JPanel panel_30 = new JPanel();
+		JPanel panel_31 = new JPanel();
+		
+		panel.add(panel_1);
+		panel_1.add(panel_6);
+		
+		JLabel lblNewLabel = new JLabel("(1)年份：");
+		panel_6.add(lblNewLabel);
+		panel_1.add(panel_7);
+		
+		Y1 = new JTextField();
+		Y1.setText("1985");
+		panel_7.add(Y1);
+		Y1.setColumns(10);
+		panel_1.add(panel_8);
+		
+		JButton A1 = new JButton("1答案为：");
+			A1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				year=Integer.parseInt(Y1.getText());
+				double W = Math.E;
+				double M=4080*pow(W,0.28*(year-1960));
+				double P=0.048*pow(0.72,(year-1974));
+				double price=M*P;
+				DecimalFormat df1 = new DecimalFormat("#.00");
+				String m1=df1.format(M);
+				DecimalFormat df2 = new DecimalFormat("#.00");
+				String p1=df2.format(price);
+				AL1.setText("需求容量为"+m1+"字，价格为"+p1+"美元");
+			}
+
+			private double pow(double d, double b) {
+				return Math.pow (d, b);
+			}
+		});
+		panel_8.add(A1);
+		panel_1.add(panel_9);
+		
+		AL1 = new JTextField();
+		panel_9.add(AL1);
+		AL1.setColumns(29);
+		
+		panel.add(panel_2);
+		panel_2.add(panel_10);
+		
+		JLabel lblNewLabel_1 = new JLabel("(2)年份：");
+		panel_10.add(lblNewLabel_1);
+		panel_2.add(panel_11);
+		
+		Y2 = new JTextField();
+		Y2.setText("1985");
+		panel_11.add(Y2);
+		Y2.setColumns(10);
+		panel_2.add(panel_12);
+		
+		JLabel lblNewLabel_2 = new JLabel("字长");
+		panel_12.add(lblNewLabel_2);
+		panel_2.add(panel_13);
+		
+		N2 = new JTextField();
+		N2.setText("16");
+		panel_13.add(N2);
+		N2.setColumns(10);
+		panel_2.add(panel_14);
+		
+		JLabel lblNewLabel_3 = new JLabel("日指令数");
+		panel_14.add(lblNewLabel_3);
+		panel_2.add(panel_15);
+		
+		D2 = new JTextField();
+		D2.setText("10");
+		panel_15.add(D2);
+		D2.setColumns(10);
+		
+		panel.add(panel_3);
+		panel_3.add(panel_18);
+		
+		JLabel lblNewLabel_4 = new JLabel("月薪");
+		panel_18.add(lblNewLabel_4);
+		panel_3.add(panel_19);
+		
+		SA2 = new JTextField();
+		SA2.setText("4000");
+		panel_19.add(SA2);
+		SA2.setColumns(10);
+		panel_3.add(panel_20);
+		
+		JButton A2 = new JButton("2答案是");
+			A2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				year=Integer.parseInt(Y2.getText());
+				work=Integer.parseInt(D2.getText());
+				bits=Integer.parseInt(N2.getText());
+				int salary = Integer.parseInt(SA2.getText());
+				double W = Math.E;
+				double M=4080*pow(W,0.28*(year-1960));
+				double P=0.048*pow(0.72,(year-1974));
+				double price=M*P;
+				double Z=salary*M/(30*work)+price;
+				DecimalFormat df3 = new DecimalFormat("#.00");
+				String c1=df3.format(Z);
+				AL2.setText("成本为"+c1+"美元");
+			}
+
+			private double pow(double d, double b) {
+				return Math.pow (d, b);
+			}
+		});
+		panel_20.add(A2);
+		panel_3.add(panel_21);
+		
+		AL2 = new JTextField();
+		AL2.setHorizontalAlignment(SwingConstants.CENTER);
+		panel_21.add(AL2);
+		AL2.setColumns(20);
+		
+		panel.add(panel_4);
+		panel_4.add(panel_22);
+		
+		JLabel label = new JLabel("(3)年份");
+		panel_22.add(label);
+		panel_4.add(panel_23);
+		
+		Y3 = new JTextField();
+		Y3.setText("1995");
+		panel_23.add(Y3);
+		Y3.setColumns(10);
+		panel_4.add(panel_24);
+		
+		JLabel label_1 = new JLabel("字长");
+		panel_24.add(label_1);
+		panel_4.add(panel_25);
+		
+		N3 = new JTextField();
+		N3.setText("32");
+		panel_25.add(N3);
+		N3.setColumns(10);
+		panel_4.add(panel_26);
+		
+		JLabel label_2 = new JLabel("日指令数");
+		panel_26.add(label_2);
+		panel_4.add(panel_27);
+		
+		D3 = new JTextField();
+		D3.setText("30");
+		panel_27.add(D3);
+		D3.setColumns(10);
+		
+		panel.add(panel_5);
+		panel_5.add(panel_28);
+		
+		JLabel label_3 = new JLabel("月薪");
+		panel_28.add(label_3);
+		panel_5.add(panel_29);
+		
+		SA3 = new JTextField();
+		SA3.setText("6000");
+		panel_29.add(SA3);
+		SA3.setColumns(10);
+		panel_5.add(panel_30);
+		
+		JButton A3 = new JButton("计算成本");
+		panel_30.add(A3);
+		panel_5.add(panel_31);
+		
+		AL3 = new JTextField();
+		panel_31.add(AL3);
+		AL3.setColumns(44);
+	
+			A3.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					year=Integer.parseInt(Y2.getText());
+					work=Integer.parseInt(D2.getText());
+					bits=Integer.parseInt(N2.getText());
+					int salary = Integer.parseInt(SA2.getText());
+					double W = Math.E;
+					double M=4080*pow(W,0.28*(year-1960));
+					double P=0.048*pow(0.72,(year-1974));
+					double price=M*P/bits;
+					double Z=salary*M/(30*work)+price;
+					DecimalFormat df3 = new DecimalFormat("#.00");
+					String c1=df3.format(Z);
+					DecimalFormat df1 = new DecimalFormat("#.00");
+					String m1=df1.format(M);
+					DecimalFormat df2 = new DecimalFormat("#.00");
+					String p1=df2.format(price);
+					AL3.setText("需求容量为"+m1+"字,价格为"+p1+"美元,成本为"+c1+"美分");
+				}
+
+				private double pow(double d, double b) {
+					return Math.pow (d, b);
+				}
+		});
+	}
+/*	public static void main(String[] args) {
+        // TODO Auto-generated method stub
+		D d = new  D();
+    }*/
+}
